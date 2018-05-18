@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <select class="activitySelector">
+        <option value="test123">test123</option>
+        <option value="addNew">Add New Item</option>
+  </select>
+  <script>
+      var activities = document.getElementsByClassName("activitySelector")[0];
+    console.log('parent: '+activities);
+    activities.addEventListener("change", function() {
+        if(activities.value == "addNew")
+        {
+            addActivityItem();
+        }
+        console.log(activities.value);
+    });
+
+    function addActivityItem() {
+        alert("Adding an item");
+        
+        var option = document.createElement("option");
+        option.value = "test";
+        option.innerHTML = "test";
+        
+        activities.appendChild(option);
+    }
+  </script>
+</body>
+</html>
