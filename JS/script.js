@@ -7,7 +7,7 @@ window.onload = function (event) {
   zoneSelect.addEventListener('change', () => {// ajout event 'change' sur select
     switch (zoneSelect.value) {
       case 'nbContacts':
-        nbContacts();
+        nbContacts();//commentaire test
         break;
       case 'listContacts':
       listContacts();
