@@ -1,3 +1,5 @@
+/* modifier les tailles pour le responsive */
+
 .fas, .fab{
     font-size: 3em;
 }
@@ -11,4 +13,23 @@ main {
     /* width: 500px; à modifier */
     text-align: center;
     margin: 20px;
+}
+.affichage {
+    width: 450px;
+    height : 300px;
+    background-color: darkgrey;
+    padding: 20px;
+}
+label
+{
+	display: block;
+	width: 150px;
+    float: left;
+}
+form div {
+    margin: 20px;
+}
+
+.zoneAffichage {
+
 }
