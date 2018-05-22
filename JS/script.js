@@ -25,6 +25,7 @@ window.onload = function (event) {
   };
   function listContacts() {
     alert('listContacts !');
+    // commentaires chris
   };
   function newContact() {
     //création formulaire
@@ -32,10 +33,9 @@ window.onload = function (event) {
     form+='<div><label for="name">Nom : </label><input type="text" id="name"></div>';
     form+='<div><label for="firstName">Prénom : </label><input type="text" id="firstName"></div>';
     form+='<div><label for="phoneNumber">N° tél. : </label><input type="text" id="phoneNumber"></div>';
-    form+='<div><input type="button" value="Go" id="button" title="valider" /></div>';
+    form+='<div><input type="button" value="Go" onclick=""  id="button" title="valider" /></div>';
     form+='</form>';//fin du form
     //création de la classe du formulaire
-    
     var zoneAffichage=document.getElementsByClassName('zoneAffichage')[0];
     zoneAffichage.innerHTML=form;
   };
