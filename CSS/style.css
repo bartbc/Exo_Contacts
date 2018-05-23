@@ -15,7 +15,7 @@ main {
     margin: 20px;
 }
 .affichage {
-    width: 450px;
+    width: 400px;
     height : 300px;
     background-color: darkgrey;
     padding: 20px;
@@ -29,7 +29,22 @@ label
 form div {
     margin: 20px;
 }
-
-.zoneAffichage {
-
+ul li {
+    list-style: none;
 }
+.separContacts{
+    margin: 10px;
+}
+.enteteContacts {
+    font-weight: bold;
+}
+ul {
+    padding: 0px;
+    align-items: left;
+    text-align: left;
+    margin-left: 125px;
+}
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
