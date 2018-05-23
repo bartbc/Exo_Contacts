@@ -1,7 +1,27 @@
 /* modifier les tailles pour le responsive */
+@font-face {
+    font-family: 'sunrise_personal_useregular';
+    src: url('sunrise_personal_use-webfont.woff2') format('woff2'),
+    url('sunrise_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header{
+    font-family: 'sunrise_personal_useregular', arial, sans-serif ;
+    text-shadow: 0.3em 0.3em darkgrey;
+    font-size: x-large;
+    color: #8700ff;
+}
 
 .fas, .fab{
     font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.selector{
+    color: #d000ff;
+    font-weight: bold;
+    font-style: italic;
 }
 .gridPrincipal { 
     display: grid; 
@@ -17,6 +37,12 @@ main {
 .affichage {
     width: 400px;
     height : 300px;
+    margin-top: 1em;
+    color: white;
+    background-image: url("../fond.jpg");
+    background-position: center center;
+    border-radius: 10px;
+    overflow: auto;
     background-color: darkgrey;
     padding: 20px;
 }
