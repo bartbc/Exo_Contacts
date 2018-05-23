@@ -72,7 +72,6 @@ function posStart() {
 
 window.onload = function (event) {
   var zoneSelect= document.getElementsByClassName('selector')[0];//pour l'ID  document.getElementById('selector')
-
   zoneSelect.addEventListener('change', () => {// ajout event 'change' sur select
     switch (zoneSelect.value) {
       case 'nbContacts':
@@ -90,6 +89,6 @@ window.onload = function (event) {
     }
   });        
 };
-window.unload
+
   
 
