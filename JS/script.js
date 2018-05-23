@@ -47,7 +47,7 @@ function listContacts() {
   chtmeul+='</ul>'
   var zoneAffichage=document.getElementsByClassName('zoneAffichage')[0];
   zoneAffichage.innerHTML=chtmeul;
-};
+}
 
 function creatContact(name,firstName,phoneNumber) {
   tableau.push([[name+";"+firstName+";"+phoneNumber]]);
@@ -60,13 +60,19 @@ function nbContacts() {
   var chtmeul='<h2>Vous avez '+nbContacts+' contacts</h2>';
   var zoneAffichage=document.getElementsByClassName('zoneAffichage')[0];
   zoneAffichage.innerHTML=chtmeul;
-};
+}
+
+function posStart() {
+  var chtmeul='<h3>Choisir une option</h3><i class="fas fa-question-circle"></i>';
+  var zoneAffichage=document.getElementsByClassName('zoneAffichage')[0];
+  zoneAffichage.innerHTML=chtmeul;
+}
 
 //optimiser en créant une fonction pour le html généré ????
 
 window.onload = function (event) {
   var zoneSelect= document.getElementsByClassName('selector')[0];//pour l'ID  document.getElementById('selector')
-  // zoneSelect.value='start';//se position par défaut sur start    
+
   zoneSelect.addEventListener('change', () => {// ajout event 'change' sur select
     switch (zoneSelect.value) {
       case 'nbContacts':
@@ -78,9 +84,12 @@ window.onload = function (event) {
       case 'newContact':
       newContact();
         break;
+      case 'start':
+        posStart();
+        break ;
     }
   });        
 };
-
+window.unload
   
 
