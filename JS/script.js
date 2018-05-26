@@ -1,7 +1,7 @@
 //init tableau 
 tableau = [];
 
-//pour tester!!! XXXxxxXXXXxx
+//pour tester!!!
 tableau.push([["Texiera;Marine;0611223344"]]);
 tableau.push([["Barthès;Christophe;0755667788"]]);
 
